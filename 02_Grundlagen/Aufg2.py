@@ -4,6 +4,5 @@ print(f"Guten Tag, {name}!")
 
 # Hilfestellung zu 2b
 teststring = "PYTHON_IST_KEINE_INSEL"
-print(teststring[0:3])
-print(teststring[3:6])
-print(teststring[6:9])
+for i in range(0, len(teststring), 3):
+    print(teststring[i: i + 3])
