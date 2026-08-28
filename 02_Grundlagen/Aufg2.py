@@ -2,7 +2,10 @@
 name = input("Bitte deinen Namen eingeben: ")
 print(f"Guten Tag, {name}!")
 
-# Hilfestellung zu 2b
+# 2b
 teststring = "PYTHON_IST_KEINE_INSEL"
+liste = []
 for i in range(0, len(teststring), 3):
-    print(teststring[i: i + 3])
+    liste.append(teststring[i: i + 3])
+    print(liste[-1])
+
