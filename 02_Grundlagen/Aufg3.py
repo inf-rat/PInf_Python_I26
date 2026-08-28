@@ -4,10 +4,7 @@ def maximum(a, b):
         return a
     else:
         return b
-
-zahl1 = int(input("Bitte Zahl 1 eingeben:"))
-zahl2 = int(input("Bitte Zahl 2 eingeben:"))
-print("Maximum: ", maximum(zahl1, zahl2))
+print("Maximum: ", maximum(5, 3))
 
 # Aufg. 3b)
 def fakultaet(n):
