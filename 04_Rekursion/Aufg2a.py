@@ -9,4 +9,4 @@ def summe_rekursiv(n):
     else:
         print("Summe ist nur für ganze Zahlen definiert.")
 
-print(summe_rekursiv(-4))
+print(summe_rekursiv(4))
