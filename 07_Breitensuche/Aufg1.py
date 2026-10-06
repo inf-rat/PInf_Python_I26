@@ -19,13 +19,13 @@ graph = {
 
 def breitensuche(graph, start) :
     besucht = set()
-    warteschlange= [start]
-    while warteschlange :
+    warteschlange = [start]
+    while warteschlange != []:
         knoten = warteschlange.pop(0)
-        if not knoten in besucht :
+        if not knoten in besucht:
             print(knoten)
             besucht.add(knoten)
-            for n in graph[knoten] :
+            for n in graph[knoten]:
                 warteschlange.append(n)
 
 breitensuche(graph, "HB")
