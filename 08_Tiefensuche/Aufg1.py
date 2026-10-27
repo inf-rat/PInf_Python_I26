@@ -25,13 +25,16 @@ def tiefensuche(graph, start, besucht = set()):
             tiefensuche(graph, n, besucht)
 
 def tiefensuche_wegfindung(graph, start, end, besucht = set()):
-    print(start)
+    if start == end:
+        return [start]
     besucht.add(start)
     for n in graph[start]:
         if not n in besucht:
             weg = tiefensuche_wegfindung(graph, n, end, besucht)
-            weg.insert(0, start)
-            return(weg)
+            if weg is not None:
+                weg.insert(0, start)
+                return(weg)
+    return None # optional: Wird sonst von Python automatisch ergänzt
 
 print(tiefensuche_wegfindung(graph, "HB", "BY"))
 
